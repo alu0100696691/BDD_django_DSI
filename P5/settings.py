@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'practica5',
+    'lettuce.django',	
 )
 
 MIDDLEWARE_CLASSES = (
