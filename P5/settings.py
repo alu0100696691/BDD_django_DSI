@@ -9,7 +9,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+#import os.path
+#root = os.path.dirname(__file__).replace('\\','/')
+
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -53,6 +57,10 @@ ROOT_URLCONF = 'P5.urls'
 
 WSGI_APPLICATION = 'P5.wsgi.application'
 
+TEMPLATE_DIRS = (
+    '/home/tony/dsi/django/P5/practica5/templates',
+)
+
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -82,3 +90,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#################################################################################################################
+
+ 
+## Make your TEMPLATE_DIRS variable look like this
+#TEMPLATE_DIRS = (
+#    root + "/../practica5/templates/",
+#)
